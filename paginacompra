@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+ 
+<html>
+ <head>
+ <title>Finalizando Compra</title>
+ <style>
+ body{
+   background-color:white;
+   color: black;
+  }
+  .Dados{
+    color:black;
+    border: 20px;
+    text-align: center;
+    height: 200px;
+    width: 30%
+    margin:10px;
+  }
+  .pagamento{
+   
+    color:black;
+    border: 20px;
+    float: left;
+    text-align: center;
+    height: 200px;
+    width: 100%
+    margin:10px;
+  }
+  .container{
+    color:black;  
+    text-align: center;
+  }
+
+ </style>
+ </head>
+  <body>
+<h2> Informações de Compra</h2><br />
+
+<form action="Formulario.php" method="post">
+
+  <div class="Dados">
+    <fieldset>
+  <legend>Dados Pessoais</legend>
+ <table cellspacing="10">
+
+  <tr>
+   <td>
+    <label for="rua">Nome Completo:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="Nome" size="50">
+   </td>
+   <td>
+    <label for="Idade">Idade:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="idade" size="4">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="bairro">CPF: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="CPF" size="20">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="cidade">RG: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="RG">
+   </td>
+  </tr>
+  <tr>
+ </table>
+</fieldset>
+</div>
+<div class="Pagamento">
+    <fieldset>
+ <legend>Pagamento</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="form">Forma de pagamento</label>
+   </td>
+   <td align="left">
+    <select name="form"> 
+
+    <option value="al">Cartão</option> 
+    <option value="am">Boleto</option>  
+ 
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="Número">Produto: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="Produto" size="30" maxlength="30"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="form">Quantidade</label>
+   </td>
+   <td align="left">
+    <select name="form"> 
+
+    <option value="1">1</option> 
+    <option value="2">2</option>
+    <option value="3">3</option> 
+    <option value="4">4</option>    
+    <option value="5">mais</option> 
+   </select>
+   </td>
+  </tr>
+  <td>
+    <label for="Cidade">SubTotal: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="SubTotal" size="20">
+   </td>
+   <td>
+    <label for="bairro">Total: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="Total" size="8">
+   </td>
+ </table>
+</fieldset>
+<br />
+<br/>
+</div>
+
+  <div class="Localização">
+    <fieldset>
+ <legend>Endereço de entrega</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="pais">País:</label>
+   </td>
+   <td align="left">
+    <select name="pais"> 
+
+    <option value="al">Alemanha</option> 
+    <option value="am">Bélgica</option> 
+    <option value="ba">Brasil</option> 
+    <option value="ce">Canadá</option> 
+    <option value="df">Dinamarca</option> 
+    <option value="ma">Moçambique</option>  
+    <option value="pe">Peru</option> 
+    <option value="rj">Rússia</option> 
+    <option value="sp">Outros</option> 
+ 
+   </select>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="Número">Logradouro: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="Endereço" size="30" maxlength="30"> 
+   </td>
+  </tr>
+  <td>
+    <label for="numero">Número:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="numero" size="4">
+   </td>
+  
+  <td>
+    <label for="Cidade">Cidade: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="Cidade" size="20">
+   </td>
+   <td>
+    <label for="bairro">Bairro: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="bairro" size="8">
+   </td>
+ </table>
+</fieldset>
+<br />
+</div>
+
+<div class="container">
+<button type="button" class="btn btn-dark">Cancelar</button>
+<button type="button" class="btn btn-dark">Finalizar</button>
+</div>
+
+</form>
+
+ </body>
+</html>
+
+
+
