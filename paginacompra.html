@@ -10,7 +10,7 @@
   }
   .Dados{
     color:black;
-    border: 20px;
+    border: 30px;
     text-align: center;
     height: 200px;
     width: 30%
@@ -19,7 +19,7 @@
   .pagamento{
    
     color:black;
-    border: 20px;
+    border: 30px;
     float: left;
     text-align: center;
     height: 200px;
@@ -31,10 +31,33 @@
     text-align: center;
   }
 
+
  </style>
  </head>
   <body>
-<h2> Informações de Compra</h2><br />
+ 
+
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="foto_do_topo.jpg" alt="Los Angeles" style="width:40%;" style= "height: 40%;">
+      </div>
+  
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      
+    </a>
+  </div>
+</div>
+
+<h2> Informações de Compra</h2><br/>
 
 <form action="Formulario.php" method="post">
 
@@ -49,12 +72,6 @@
    </td>
    <td align="left">
     <input type="text" name="Nome" size="50">
-   </td>
-   <td>
-    <label for="Idade">Idade:</label>
-   </td>
-   <td align="left">
-    <input type="text" name="idade" size="4">
    </td>
   </tr>
   <tr>
@@ -77,7 +94,6 @@
  </table>
 </fieldset>
 </div>
-<div class="Pagamento">
     <fieldset>
  <legend>Pagamento</legend>
  <table cellspacing="10">
@@ -96,12 +112,25 @@
   </tr>
   <tr>
    <td>
-    <label for="Número">Produto: </label>
+    <label for="Número">Categoria: </label>
    </td>
    <td align="left">
-    <input type="text" name="Produto" size="30" maxlength="30"> 
+   <select name="form"> 
+
+    <option value="1">Vestuário Feminino</option> 
+    <option value="2">Vestuário Masculino</option>
+    <option value="3">Seção Infantil</option> 
+    <option value="4">Acessórios </option>    
+    <option value="5">Entre outros</option> 
+   </select>
    </td>
   </tr>
+  <td>
+    <label for="produto">Descrição do Produto: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="produto">
+   </td>
   <tr>
    <td>
     <label for="form">Quantidade</label>
@@ -118,13 +147,13 @@
    </td>
   </tr>
   <td>
-    <label for="Cidade">SubTotal: </label>
+    <label for="subtotal">SubTotal: </label>
    </td>
    <td align="left">
     <input type="text" name="SubTotal" size="20">
    </td>
    <td>
-    <label for="bairro">Total: </label>
+    <label for="total">Total: </label>
    </td>
    <td align="left">
     <input type="text" name="Total" size="8">
@@ -134,7 +163,7 @@
 <br />
 <br/>
 </div>
-
+     
   <div class="Localização">
     <fieldset>
  <legend>Endereço de entrega</legend>
@@ -159,43 +188,51 @@
    </select>
    </td>
   </tr>
-  <tr>
+  
+    <tr>
    <td>
-    <label for="Número">Logradouro: </label>
+      <label for="Número">Logradouro: </label>
    </td>
    <td align="left">
-    <input type="text" name="Endereço" size="30" maxlength="30"> 
+      <input type="text" name="Endereço" size="30" maxlength="30"> 
    </td>
   </tr>
   <td>
-    <label for="numero">Número:</label>
+      <label for="numero">Número:</label>
    </td>
    <td align="left">
-    <input type="text" name="numero" size="4">
+      <input type="text" name="numero" size="4">
    </td>
   
   <td>
-    <label for="Cidade">Cidade: </label>
+       <label for="Cidade">Cidade: </label>
    </td>
    <td align="left">
-    <input type="text" name="Cidade" size="20">
+        <input type="text" name="Cidade" size="20">
    </td>
    <td>
-    <label for="bairro">Bairro: </label>
+        <label for="bairro">Bairro: </label>
    </td>
    <td align="left">
-    <input type="text" name="bairro" size="8">
+       <input type="text" name="bairro" size="8">
    </td>
- </table>
-</fieldset>
-<br />
-</div>
+    <td>
+         <label for="est">Estado:</label>
+   </td>
+   <td align="left">
+          <input type="text" name="est" size="8">
+   </td>
+
+
+  </table>
+  </fieldset>
+  <br />
 
 <div class="container">
-<button type="button" class="btn btn-dark">Cancelar</button>
-<button type="button" class="btn btn-dark">Finalizar</button>
+     <button type="submit" class="btn btn-default">Cancelar</button>
+     <button type="submit" class="btn btn-default">Finalizar</button>
 </div>
-
+</div>
 </form>
 
  </body>
